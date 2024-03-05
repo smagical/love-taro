@@ -1,0 +1,52 @@
+.navigation{
+   width: 100vw;
+   background: red;
+   position: relative;
+
+   &-status{
+      width: 100vw;
+      background: aqua;
+   }
+
+
+   &-title{
+      width: 100vw;
+      height: 100%;
+      //background: red;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      position: relative;
+
+      &-left{
+         height: 100%;
+         width: 80px;
+         position: absolute;
+         left: 10px;
+         top: 18px;
+         display: flex;
+         align-items: center;
+         align-content: center;
+         flex-direction: column;
+         justify-content: center;
+         justify-items: center;
+         text-align: center;
+         color: white;
+      }
+      &-center{
+         color: white;
+      }
+
+      &-nav{
+         background: transparent;
+         top: 10px;
+         --nutui-navbar-height:40px;
+         --nutui-navbar-margin-bottom:10px;
+         color: white;
+      }
+   }
+}

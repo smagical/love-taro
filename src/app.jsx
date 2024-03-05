@@ -6,6 +6,7 @@ import './app.scss'
 import store from '@/store/index'
 import {Provider} from "react-redux";
 import axios from "axios";
+import {BrowserRouter} from "react-router-dom";
 
 axios.defaults.baseURL = process.env.TARO_APP_API_HOST
 axios.defaults.withCredentials = true
@@ -25,7 +26,9 @@ function App(props) {
   return (
       <Provider store={store}>
         {/* props.children 是将要被渲染的页面 */}
-        {props.children}
+        <BrowserRouter basename={"/"} >
+          {props.children}
+        </BrowserRouter>
       </Provider>
   )
 }

@@ -1,0 +1,51 @@
+.traffic{
+
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  &-content{
+    --nutui-col-default-margin-bottom: 0;
+
+    &-upload{
+      height: 300px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+
+      &-half{
+        height: 150px;
+      }
+    }
+
+  }
+
+  &-popup{
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 80px;
+    background-color: var(--nutui-cell-background-color, var(--nutui-gray-1, #ffffff));
+    &-title{
+      margin-bottom: 30px;
+    }
+    &-toolbar{
+       background: transparent;
+       height: 90px;
+       width: 100vw;
+       position: fixed;
+       bottom: 10px;
+
+       display: flex;
+       align-items: center;
+       align-content: center;
+       flex-direction: column;
+       justify-content: center;
+       justify-items: center;
+       text-align: center;
+    }
+  }
+}
